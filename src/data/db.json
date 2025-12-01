@@ -1,0 +1,24 @@
+{
+  "posts": [
+    { "id": 1, "title": "Understanding APIs in 5 Minutes", "views": 250, "completed": false },
+    { "id": 2, "title": "Mastering JavaScript Step by Step", "views": 340, "completed": true },
+    { "id": 3, "title": "Frontend vs Backend Explained", "views": 180, "completed": false },
+    { "id": 4, "title": "Why Tailwind CSS is Awesome", "views": 410, "completed": true },
+    { "id": 5, "title": "React Hooks Deep Dive", "views": 290, "completed": false },
+    { "id": 6, "title": "Node.js Performance Tips", "views": 360, "completed": true },
+    { "id": 7, "title": "Async/Await vs Promises", "views": 220, "completed": false },
+    { "id": 8, "title": "CSS Grid vs Flexbox", "views": 330, "completed": true },
+    { "id": 9, "title": "Debugging JavaScript Efficiently", "views": 270, "completed": false },
+    { "id": 10, "title": "TypeScript Basics for Beginners", "views": 400, "completed": true },
+    { "id": 11, "title": "Understanding RESTful APIs", "views": 310, "completed": false },
+    { "id": 12, "title": "GraphQL vs REST: Which to Use?", "views": 420, "completed": true },
+    { "id": 13, "title": "Advanced React Patterns", "views": 280, "completed": false },
+    { "id": 14, "title": "Optimizing Web Performance", "views": 350, "completed": true },
+    { "id": 15, "title": "Building Scalable Node.js Apps", "views": 260, "completed": false },
+    { "id": 16, "title": "Securing Your Web Applications", "views": 380, "completed": true },
+    { "id": 17, "title": "Understanding Event Loop in JS", "views": 240, "completed": false },
+    { "id": 18, "title": "Introduction to Next.js", "views": 430, "completed": true },
+    { "id": 19, "title": "Testing React Components", "views": 300, "completed": false },
+    { "id": 20, "title": "Deploying Apps on Vercel", "views": 390, "completed": true }
+  ]
+}
