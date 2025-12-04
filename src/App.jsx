@@ -7,14 +7,12 @@ function App() {
   const [editId, setEditId] = useState(null);
   const [url, setUrl] = useState("http://localhost:3000/posts");
 
-  // Fetch all posts
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPosts(data));
   }, [url]);
 
-  // POST Function
   const addPost = () => {
     const newPost = {
       title,
@@ -22,7 +20,6 @@ function App() {
       completed: false,
     };
 
-    // If editing, use PUT
     if (editId !== null) {
       fetch(`http://localhost:3000/posts/${editId}`, {
         method: "PUT",
@@ -42,7 +39,6 @@ function App() {
       return;
     }
 
-    // Otherwise POST
     fetch("http://localhost:3000/posts", {
       method: "POST",
       headers: {
@@ -58,7 +54,6 @@ function App() {
       });
   };
 
-  // DELETE Function
   const deletePost = (id) => {
     fetch(`http://localhost:3000/posts/${id}`, {
       method: "DELETE",
@@ -67,7 +62,6 @@ function App() {
     });
   };
 
-  // Edit Button Action → form mein values aa jayengi
   const editPost = (post) => {
     setTitle(post.title);
     setViews(post.views);
@@ -137,7 +131,6 @@ function App() {
               )}
             </h2>
 
-            {/* Edit Button */}
             <button
               onClick={() => editPost(p)}
               className="m-2 px-4 rounded bg-green-400"
@@ -145,7 +138,6 @@ function App() {
               Edit
             </button>
 
-            {/* Delete Button */}
             <button
               onClick={() => deletePost(p.id)}
               className="m-2 px-4 rounded bg-red-400"
